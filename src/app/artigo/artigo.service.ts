@@ -19,4 +19,9 @@ export class ArtigoService {
     return this.artigos;
   }
 
+  getById(id: number){
+    const artigo = this.artigos.find ( (value) => value.id == id);
+    return artigo;
+  }
+
 }
